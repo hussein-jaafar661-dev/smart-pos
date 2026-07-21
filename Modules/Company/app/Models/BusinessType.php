@@ -10,6 +10,7 @@ use Modules\Company\Models\Company;
 
 class BusinessType extends Model
 {
+    
     use HasFactory;
 
     /**

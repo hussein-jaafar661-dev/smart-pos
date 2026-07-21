@@ -7,18 +7,16 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Modules\Company\Models\Company;
 use Illuminate\Database\Eloquent\SoftDeletes;
 // use Modules\Company\Database\Factories\BranchFactory;
-
 class Branch extends Model
 {
     use HasFactory,SoftDeletes;
-
     /**
      * The attributes that are mass assignable.
      */
     protected $fillable = [
         'name',
        'company_id',
-        //'code',
+        'code',
         'phone',
         'email',
         'address',
@@ -26,7 +24,8 @@ class Branch extends Model
         'state',
         'country',
         'postal_code',
-        'notes'
+        'notes',
+        'is_main',
     ];
     protected $casts = [
         'is_active' => 'boolean',

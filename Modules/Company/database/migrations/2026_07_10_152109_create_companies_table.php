@@ -22,10 +22,7 @@ $table->string('legal_name',150)->nullable();
 
 $table->string('tax_number',50)->nullable()->unique();
             $table->string('commercial_register')->nullable();
-$table->foreignId('business_type_id')
-                ->nullable()
-                ->constrained()
-                ->nullOnDelete();
+$table->foreignId('business_type_id')->constrained()->restrictOnDelete();
 $table->string('email',150)->nullable();
 
 $table->string('phone',50)->nullable();

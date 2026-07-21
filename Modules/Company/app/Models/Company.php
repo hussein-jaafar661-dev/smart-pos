@@ -13,12 +13,11 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Company extends Model
 {
     use HasFactory,SoftDeletes;
-
     /**
      * The attributes that are mass assignable.
      */
     protected $fillable = [
-          //  'code',
+        'code',
         'name',
         'legal_name',
         'commercial_register',
