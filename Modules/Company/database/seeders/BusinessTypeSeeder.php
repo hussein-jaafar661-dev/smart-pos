@@ -26,6 +26,12 @@ class BusinessTypeSeeder extends Seeder
                 'is_active' => true,
             ],
             [
+                'code' => 'GROCERY',
+                'name' => 'Grocery Store',
+                'description' => 'Grocery, fruits and vegetables store',
+                'is_active' => true,
+            ],
+            [
                 'code' => 'PHARMACY',
                 'name' => 'Pharmacy',
                 'description' => 'Pharmacy and medical store',

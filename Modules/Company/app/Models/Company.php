@@ -8,6 +8,10 @@ use Modules\Company\Models\Branch;
 use Modules\Company\Models\BusinessType;
 use Modules\Company\Models\CompanySetting;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Database\Eloquent\Relations\HasMany;
+use Illuminate\Database\Eloquent\Relations\HasOne;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Modules\Inventory\Models\Unit;
 // use Modules\Company\Database\Factories\CompanyFactory;
 
 class Company extends Model
@@ -53,4 +57,9 @@ public function businessType()
 {
     return $this->belongsTo(BusinessType::class);
 }
+public function units()
+{
+    return $this->hasMany(Unit::class);
+}
+
 }

@@ -1,4 +1,6 @@
 {
     "Company": true,
-    "Identity": true
+    "Identity": true,
+    "Catalog": true,
+    "Inventory": true
 }
